@@ -25,6 +25,7 @@ Pour visualiser la conception de l'application, consultez les images dans le dos
 
 **Commentaires sur les images de conception :**
 
-- **image1.png** : Schéma de l'interface utilisateur pour la gestion des transactions.
+-![Alt text](C:\Users\user\Pictures\Screenshots\Capture d'écran 2024-05-14 161035.png)
+* : Schéma de l'interface utilisateur pour la gestion des transactions.
 - **image2.png** : Diagramme de classe pour la gestion des budgets.
 - **image3.png** : Wireframe pour l'écran de création de budget.
