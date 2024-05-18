@@ -1,33 +1,38 @@
 package com.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int IdUser;
-    private String Username;
+    private int idUser;
+
+    private String username;
 
     // Getters and setters
-    public int getUserId() {
-        return IdUser;
+    public int getIdUser() {
+        return idUser;
     }
 
-    public void setUserId(int IdUser) {
-        this.IdUser = IdUser;
+    public void setIdUser(int idUser) {
+        this.idUser = idUser;
     }
 
-    public String getName() {
-        return Username;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String Username) {
-        this.Username = Username;
+    public void setUsername(String username) {
+        this.username = username;
     }
+
+    // Remove this method as it's not needed
+    // public void setName(String johnDoe) {
+    // }
 }

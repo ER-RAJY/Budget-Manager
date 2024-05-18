@@ -1,9 +1,10 @@
 package com.dao;
 
 import com.model.User;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+
 
 public class Main {
 
@@ -17,7 +18,7 @@ public class Main {
         try {
             // Create a user object
             User user = new User();
-            user.setName("John Doe");
+            user.setUsername("John Doe");
 
             // Start a transaction
             entityManager.getTransaction().begin();
@@ -27,7 +28,7 @@ public class Main {
 
             // Commit transaction
             entityManager.getTransaction().commit();
-            System.out.println("Insteretion succesfull");
+            System.out.println("Insertion successful");
         } finally {
             entityManager.close();
             factory.close();
